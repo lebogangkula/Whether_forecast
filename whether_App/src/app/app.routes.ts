@@ -1,20 +1,20 @@
 import { Routes } from '@angular/router';
-import { WhetherUI } from './whether-ui/whether-ui';
+import { WhetherUI } from './weather-ui/whether-ui';
 
 export const routes: Routes = [
     {
-        path:"whetherUi",
+        path:"weatherUi",
         component: WhetherUI
     },
     {
         path: "",
-        redirectTo: "whetherUi",
+        redirectTo: "weatherUi",
         pathMatch: "full"
     }
     ,
     {
         path: "**",
-        redirectTo: "whetherUi",
+        redirectTo: "weatherUi",
         pathMatch: "full"
     }
 ];

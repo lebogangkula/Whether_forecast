@@ -1,0 +1,94 @@
+
+<div class="whetherConteiner">
+    
+<div class="card">
+<h1 class="Town">{{city}}</h1>
+
+<p class="allresults" style="color: rgb(122, 240, 122); font-style: italic;">current weather prediction</p>
+
+
+<h2 class="allresults">{{currTemp}}°C  <img class="imageStatus" 
+     [src]="'http://openweathermap.org/img/wn/' + currentWhether.icon + '@2x.png'" 
+     style="width:66px; height:40px;">
+</h2>
+
+<h3 class="allresults">Humidity: {{currentWhether.humidity}}%  <span class="spaces"></span>   Wind: {{currentWhether.wind* 100}}km/h  <span class="spaces"></span>  10km</h3>
+<h1 style="color: rgb(97, 97, 179); text-align: center;">{{currentWhether.description}}</h1>
+</div>  
+<div class="displayType">
+    <p>Hourly Forecast</p>
+</div>
+<div class="whetherOutput">
+<div class="cards">
+  <h4>{{ (hourlyWhether[4].time).substring(12, 13) }}AM</h4>
+  <img [src]="'http://openweathermap.org/img/wn/' + hourlyWhether[4].icon + '@2x.png'" style="width:46px;
+    height: 46px;">
+  <h4>{{ temp4 }}°C</h4>
+</div>
+
+<div class="cards">
+  <h4>{{ (hourlyWhether[1].time).substring(12, 13) }}AM</h4>
+  <img [src]="'http://openweathermap.org/img/wn/' + hourlyWhether[1].icon + '@2x.png'" style="width:46px;
+    height: 46px;">
+  <h4>{{ temp1 }}°C</h4>
+</div>
+
+<div class="cards">
+  <h4>{{ (hourlyWhether[2].time).substring(12, 13) }}AM</h4>
+  <img [src]="'http://openweathermap.org/img/wn/' + hourlyWhether[2].icon + '@2x.png'" style="width:46px;
+    height: 46px;">
+  <h4>{{ temp2 }}°C</h4>
+</div>
+
+<div class="cards">
+  <h4>{{ (hourlyWhether[3].time).substring(12, 13) }}AM</h4>
+  <img [src]="'http://openweathermap.org/img/wn/' + hourlyWhether[3].icon + '@2x.png'" style="width:46px;
+    height: 46px;">
+  <h4>{{ temp3 }}°C</h4>
+</div>
+
+
+
+
+</div>
+
+<div class="displayType">
+    <p>7-Day Forecast</p>
+</div>
+
+
+<div class="whetherOutput">
+ <div class="cards" *ngIf="day1">
+  <h4>{{ day1 }}</h4>
+  <img [src]="'http://openweathermap.org/img/wn/' + dailyWhether[dateKeys[0]][0].weather[0].icon + '@2x.png'"style="width:46px;
+    height: 46px;">
+  <h4>{{ day1Temp }}°C</h4>
+</div>
+
+<div class="cards" *ngIf="day2">
+  <h4>{{ day2 }}</h4>
+  <img [src]="'http://openweathermap.org/img/wn/' + dailyWhether[dateKeys[1]][0].weather[0].icon + '@2x.png'" style="width:46px;
+    height: 46px;">
+  <h4>{{ day2Temp }}°C</h4>
+</div>
+
+<div class="cards" *ngIf="day3">
+  <h4>{{ day3 }}</h4>
+  <img [src]="'http://openweathermap.org/img/wn/' + dailyWhether[dateKeys[2]][0].weather[0].icon + '@2x.png'" style="width:46px;
+    height: 46px;">
+  <h4>{{ day3Temp }}°C</h4>
+</div>
+
+<div class="cards" *ngIf="day4">
+  <h4>{{ day4 }}</h4>
+  <img [src]="'http://openweathermap.org/img/wn/' + dailyWhether[dateKeys[3]][0].weather[0].icon + '@2x.png'" style="width:46px;
+    height: 46px;">
+  <h4>{{ day4Temp }}°C</h4>
+</div>
+
+
+
+  
+</div>
+
+</div>
