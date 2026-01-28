@@ -3,33 +3,64 @@
     display: flex;
     
 }
+.Town,p,h2,h3{
+    margin-left: 10px;
+    
+}
 h2 img{
     width:36px;
     height: 36px;
 }
+.whetherConteiner{
+  
+   align-items: center;
+   justify-content: center;
+   background-color: aqua; 
+   border-radius: 15px;
+   padding: 3px;
+   width: 370px;
+   max-height: 400px;
+   overflow-y: auto;
+}
 .cards{
-    display: flex;
-    margin-left: 10px;
-        margin-right: 10px;
-        width: 70px;
-    height: 90px;
-    border-radius: 15px;
-    box-shadow: 1px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    width: 70px;
+     height: 120px;
+      border-radius: 15px;
+       background-color: rgb(255, 255, 255);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+         margin-left: 10px; 
+         margin-right: 10px;
+          display: flex; 
+          flex-direction: column;
+           justify-content: space-between;
+         align-items: center;
+            overflow: hidden;
+             text-align: center;
 }
 .displayType{
-    margin-left: 10px;
     font-weight: 600;
     font-style: oblique;
 }
-
+.imageStatus{
+    margin-left: 170px;
+    width: 40px;
+    height: 40px;
+}
+.spaces{
+    margin-left: 30px;
+    
+}
+h3{
+    font-size: 15px;
+    font-style: oblique
+}
 .card{
-    display: flex;
+    
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
         width: 340px;
     height: 200px;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 1px solid rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     
