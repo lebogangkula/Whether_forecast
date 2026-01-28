@@ -1,0 +1,37 @@
+
+.whetherOutput{
+    display: flex;
+    
+}
+h2 img{
+    width:36px;
+    height: 36px;
+}
+.cards{
+    display: flex;
+    margin-left: 10px;
+        margin-right: 10px;
+        width: 70px;
+    height: 90px;
+    border-radius: 15px;
+    box-shadow: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+.displayType{
+    margin-left: 10px;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.card{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+        width: 340px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    
+
+}

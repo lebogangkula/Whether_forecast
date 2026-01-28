@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.container{
+    display: flex;
+    width: 99vw;
+    height: 94vh;
+    background-color: rgb(97, 218, 255);
+    align-items: center;
+    justify-content: center;
+}
