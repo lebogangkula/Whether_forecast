@@ -28,7 +28,7 @@ temp2: number = 0;
 temp3: number = 0;
 temp4: number = 0;
 dateKeys: string[] = [];
-
+currhum: number = 0;
 
 
 day3: string = "";
@@ -82,7 +82,7 @@ day4: string = "";
     this.dailyWhether = daily;
 
   this.dateKeys = Object.keys(this.dailyWhether);
-
+this.currhum = Math.round(this.currentWhether.humidity);
 this.day1 = new Date(this.dailyWhether[this.dateKeys[0]][0].dt_txt)
   .toLocaleDateString("en-US", { weekday: "short" });
 this.day2 = new Date(this.dailyWhether[this.dateKeys[1]][0].dt_txt)

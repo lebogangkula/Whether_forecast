@@ -2,17 +2,17 @@
 <div class="whetherConteiner">
     
 <div class="card">
-<h1 class="Town">{{city}}</h1>
+<h1 class="Town" style="font-size: 30px;">{{city}}</h1>
 
-<p class="allresults" style="color: rgb(122, 240, 122); font-style: italic;">current weather prediction</p>
+<p class="allresults" style="color: rgb(122, 240, 122); font-style: italic;"style="font-size: 18px;">current weather prediction</p>
 
 
-<h2 class="allresults">{{currTemp}}°C  <img class="imageStatus" 
+<h2  style="font-size: 18px;" class="allresults">{{currTemp}}°C  <img class="imageStatus" 
      [src]="'http://openweathermap.org/img/wn/' + currentWhether.icon + '@2x.png'" 
      style="width:66px; height:40px;">
 </h2>
 
-<h3 class="allresults">Humidity: {{currentWhether.humidity}}%  <span class="spaces"></span>   Wind: {{currentWhether.wind* 100}}km/h  <span class="spaces"></span>  10km</h3>
+<h3  style="font-size: 18px;" class="allresults">Humidity: {{currentWhether.humidity}}%  <span class="spaces"></span>   Wind: {{currhum}}km/h  <span class="spaces"></span>  10km</h3>
 <h1 style="color: rgb(97, 97, 179); text-align: center;">{{currentWhether.description}}</h1>
 </div>  
 <div class="displayType">
